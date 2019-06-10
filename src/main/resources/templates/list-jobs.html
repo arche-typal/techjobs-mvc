@@ -12,7 +12,7 @@
 
     <!-- TODO #3 - Use the same list display from search.html -->
     <!--for each job in jobs, display job-->
-    <p th:if="${jobs}" th:text="${#lists.size(jobs)} + ' Results'"></p>
+    <p th:if="${jobs}" th:text="${#lists.size(jobs)} + ' Result(s)'"></p>
 
     <p th:each="job, idx : ${jobs}" th:class="${idx.odd} ? 'odd'">
         <table class="job-listing">

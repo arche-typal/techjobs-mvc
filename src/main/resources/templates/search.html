@@ -42,7 +42,7 @@
     <!--for each job in jobs, display job-->
     <div class="container body-content">
     <!--<p th:unless="${jobs} and ${jobs.size()}">no results :(</p>-->
-        <p th:if="${jobs}" th:text="${#lists.size(jobs)} + ' Results'"></p>
+        <p th:if="${jobs}" th:text="${#lists.size(jobs)} + ' Result(s)'"></p>
 
 
         <p th:each="job, idx : ${jobs}" th:class="${idx.odd} ? 'odd'">
